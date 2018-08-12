@@ -1,0 +1,6 @@
+{
+    "name": "Mikroservis Filmovi",
+    "repository": "https://github.com/hhelja1/kino-app/tree/master/kino-app-micro-Filmovi",
+    "keywords": ["node", "express", "heroku"]
+  }
+  
