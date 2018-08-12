@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var app = express();
 var bodyParser = require('body-parser');
 var cors = require('cors');
+const PORT = process.env.PORT || 8086
 
 app.use(cors());
 var routerAPI = express.Router();
@@ -47,7 +48,7 @@ routerAPI.get('/vratiSinopsisFilma/:naziv', function (req, res) {
 
 app.use('/api', routerAPI);
 
-var server = app.listen(8085, function () {
+var server = app.listen(PORT, function () {
    var host = server.address().address
    var port = server.address().port
    
